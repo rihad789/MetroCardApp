@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Metro_Card_Portal.Fragment_Travel_History">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/swipe_for_travel_history"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/travel_history_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_centerInParent="true"
+                android:layout_height="50dp"
+                android:indeterminateDrawable="@drawable/circle_progressbar"
+                android:id="@+id/travel_historyProgressbar"/>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

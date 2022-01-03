@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_metro_bangla_logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Register_Complaint_Btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button_card_portal"
+        android:text="@string/register_complaint"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        android:textAllCaps="true"
+        android:textColor="@color/red" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Metro_Card_Portal_Btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button_card_portal"
+        android:text="@string/metro_card_portal"
+        android:textAllCaps="true"
+        android:textColor="@color/red" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Fare_And_Route_Btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button_card_portal"
+        android:text="@string/fare_and_route"
+        android:textAllCaps="true"
+        android:textColor="@color/red" />
+
+</LinearLayout>

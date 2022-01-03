@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "185370701037",
+    "project_id": "metrocardbd-23094",
+    "storage_bucket": "metrocardbd-23094.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185370701037:android:de0d9b898bac80782570e4",
+        "android_client_info": {
+          "package_name": "com.service.metrocardbd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185370701037-q6kjq4o9k68mlv2lv01fgrvonohr4ett.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs39Y-N5kHJDm3_uXXx3gqB5JWoxePtFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185370701037-q6kjq4o9k68mlv2lv01fgrvonohr4ett.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

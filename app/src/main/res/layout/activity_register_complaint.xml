@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterComplaintActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/complainer_name"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/red"
+            android:textColorHint="@color/red"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/complainer_phone"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/phone"
+            android:textColorHint="@color/red"
+            android:inputType="phone"
+            android:paddingStart="20dp"
+            android:textColor="@color/red"
+            tools:ignore="RtlSymmetry" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="57dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/complain_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:paddingStart="20dp"
+                android:text="@string/complain_type"
+                android:textColor="@color/red"
+                tools:ignore="LabelFor,RtlSymmetry" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_complaint_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_button_main"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
